@@ -1,5 +1,5 @@
 apt update && apt upgrade -y
-apt install vim ffmpeg
+apt install vim ffmpeg -y
 sudo install -d -o root -g root /opt/navidrome
 sudo install -d -o root -g root /var/lib/navidrome
 wget https://github.com/navidrome/navidrome/releases/download/v0.48.0/navidrome_0.48.0_Linux_x86_64.tar.gz -O Navidrome.tar.gz
