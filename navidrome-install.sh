@@ -6,6 +6,7 @@ wget https://github.com/navidrome/navidrome/releases/download/v0.48.0/navidrome_
 sudo tar -xvzf Navidrome.tar.gz -C /opt/navidrome/
 sudo chown -R root:root /opt/navidrome
 echo 'MusicFolder = "/mnt/Music"' >> /var/lib/navidrome/navidrome.toml
+echo 'ND_PORT = 80' >> /var/lib/navidrome/navidrome.toml
 echo '[Unit]' >> /etc/systemd/system/navidrome.service
 echo 'Description=Navidrome Music Server and Streamer compatible with Subsonic/Airsonic' >> /etc/systemd/system/navidrome.service
 echo 'After=remote-fs.target network.target' >> /etc/systemd/system/navidrome.service
